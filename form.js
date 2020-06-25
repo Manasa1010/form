@@ -5,7 +5,9 @@ class Form{
        this.Q3=createElement("h2");
        this.Q4=createElement("h2");
        this.Q5=createElement("h2");
+       this.radio = createRadio();
     }
+   
 
     display(){
         var title = createElement("h2");
@@ -15,6 +17,16 @@ class Form{
 
        this.Q1.html("1:Do you think our school should increase our free time ?");
       this.Q1.position(100,200);
+      this.radio.option('no');
+      this.radio.option('yes');
+     
+      //this. radio.style('width', '100px');
+      //let val = this.radio.value();
+    //background(val);
+      //text(val, width / 2, height / 2);
+
+      //textAlign(CENTER);
+      //fill(255, 0, 0);
 
       this.Q2.html("2:Do you thing ou school should increase our lunch time  ?");
       this.Q2.position(100,300);
